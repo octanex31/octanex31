@@ -21,11 +21,7 @@ const Skeleton = forwardRef<HTMLDivElement, SkeletonProps>(
     return (
       <div
         ref={ref}
-        className={cn(
-          'animate-pulse bg-white/5',
-          variantStyles[variant],
-          className,
-        )}
+        className={cn('animate-pulse bg-white/5', variantStyles[variant], className)}
         {...props}
       />
     );
