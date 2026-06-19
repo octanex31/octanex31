@@ -15,10 +15,7 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
     return (
       <div className="flex w-full flex-col gap-1.5">
         {label && (
-          <label
-            htmlFor={textareaId}
-            className="text-sm font-medium text-text-secondary"
-          >
+          <label htmlFor={textareaId} className="text-sm font-medium text-text-secondary">
             {label}
           </label>
         )}
@@ -34,9 +31,7 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
           )}
           {...props}
         />
-        {error && (
-          <p className="text-xs text-red-400">{error}</p>
-        )}
+        {error && <p className="text-xs text-red-400">{error}</p>}
       </div>
     );
   },
